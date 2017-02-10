@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Java设计模式</string>
+    <string name="btn_text_strategy">策略模式（Strategy）</string>
+</resources>
