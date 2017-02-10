@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Java设计模式</string>
+    <!--策略模式-->
     <string name="btn_text_strategy">策略模式（Strategy）</string>
+    <string name="text_strategy_select">策略选择</string>
+    <string name="text_strategy_a">策略一</string>
+    <string name="text_strategy_b">策略二</string>
+    <string name="text_strategy_c">策略三</string>
+    <string name="btn_strategy_invoke">策略调用</string>
 </resources>
