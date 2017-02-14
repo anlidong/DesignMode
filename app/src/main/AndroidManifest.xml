@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".strategy.StrategyActivity"></activity>
+        <activity android:name=".strategy.StrategyActivity"
+            android:label="@string/btn_text_strategy"/>
+        <activity android:name=".observer.ObserverActivity"
+            android:label="@string/btn_text_observer"/>
     </application>
 
 </manifest>

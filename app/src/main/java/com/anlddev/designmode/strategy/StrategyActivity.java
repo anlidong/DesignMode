@@ -16,6 +16,9 @@ import com.anlddev.designmode.strategy.pattern.ThirdStrategy;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * 策略模式Demo
+ */
 public class StrategyActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
 
     @BindView(R.id.rg_strategy_select)
@@ -23,9 +26,13 @@ public class StrategyActivity extends AppCompatActivity implements RadioGroup.On
     @BindView(R.id.tv_strategy_result)
     protected TextView tvResult;
 
+    //策略一
     private Strategy mStrategy1 = new FirstStrategy();
+    //策略二
     private Strategy mStrategy2 = new SecondStrategy();
+    //策略三
     private Strategy mStrategy3 = new ThirdStrategy();
+    //策略环境角色
     private Env mEnv = new Env(mStrategy1);
 
     @Override
@@ -38,11 +45,13 @@ public class StrategyActivity extends AppCompatActivity implements RadioGroup.On
     }
 
     public void btnStrategyInvokeOnClick(View v) {
+        //最终执行
         mEnv.currentStrategy(tvResult);
     }
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
+        //策略选择
         switch (checkedId) {
             case R.id.rb_strategy_1:
                 mEnv.setmStrategy(mStrategy1);

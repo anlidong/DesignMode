@@ -7,4 +7,10 @@
     <string name="text_strategy_b">策略二</string>
     <string name="text_strategy_c">策略三</string>
     <string name="btn_strategy_invoke">策略调用</string>
+
+    <!--观察者模式-->
+    <string name="btn_text_observer">观察者模式（Observer）</string>
+    <string name="btn_text_update_state">更新被观察者状态</string>
+    <string name="text_unjoin">未加入</string>
+    <string name="text_join">加入</string>
 </resources>

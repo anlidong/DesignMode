@@ -9,6 +9,9 @@ import android.view.View;
 
 public class Env {
 
+    /**
+     * 策略实例
+     */
     private Strategy mStrategy;
 
     public Env(Strategy mStrategy) {
@@ -23,6 +26,10 @@ public class Env {
         this.mStrategy = mStrategy;
     }
 
+    /**
+     * 统一执行方法
+     * @param v
+     */
     public void currentStrategy(View v) {
         mStrategy.strategy(v);
     }

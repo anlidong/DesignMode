@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.anlddev.designmode.observer.ObserverActivity;
 import com.anlddev.designmode.strategy.StrategyActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,8 +17,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * 策略模式
+     * @param v
+     */
     public void btnStrategyOnClick(View v) {
         Intent intent = new Intent(this, StrategyActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * 观察者模式
+     * @param v
+     */
+    public void btnObserverOnClick(View v) {
+        Intent intent = new Intent(this, ObserverActivity.class);
         startActivity(intent);
     }
 }
